@@ -1,0 +1,12 @@
+Menu
+buildings
+UI
+minion moving on path
+inventory
+minion tasks
+gathering materials
+leveling up
+adding minions with level
+level rewards
+shop
+coins

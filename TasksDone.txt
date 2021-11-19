@@ -1,0 +1,3 @@
+Created starting map
+Created minion idle, walking animations
+Created file loading/saving
