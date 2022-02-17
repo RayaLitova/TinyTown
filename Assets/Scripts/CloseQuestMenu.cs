@@ -13,4 +13,7 @@ public class CloseQuestMenu : MonoBehaviour
             StartScript.CurrentProgressData.StopScreenMoving = false;
         }
     }
+    public void Show(){
+        a.SetActive(true);
+    }
 }

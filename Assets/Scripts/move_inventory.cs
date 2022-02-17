@@ -7,7 +7,6 @@ public class move_inventory : MonoBehaviour
     private Vector2 mousePos;
     private float delX, delY;
 
-
     private void OnMouseDown(){
         Debug.Log("press");
         delX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x;

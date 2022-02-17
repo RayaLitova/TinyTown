@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class XPbar : MonoBehaviour
 {
     public Slider slider;
+
     void Update(){
         slider.value = StartScript.CurrentProgressData.XP;
     }

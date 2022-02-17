@@ -14,5 +14,6 @@ public class DisableCameraMoving : MonoBehaviour, UnityEngine.EventSystems.IPoin
     {
         StartScript.CurrentProgressData.StopScreenMoving = false;
     }
+
  }
 

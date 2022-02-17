@@ -27,7 +27,7 @@ public class CurrentProgress
         position = new Vector2(c.pos[0], c.pos[1]);
         StopScreenMoving = false;
         Currency = c.Currency;
-        Soils = new int?[100, 7];
+        Soils = new int?[100, 8];
         for(int i=0;c.Soils[i,0].HasValue;i++){
             for(int j=0;j<7;j++){
                 Soils[i,j] = c.Soils[i,j];
@@ -47,16 +47,7 @@ public class CurrentProgress
         position = new Vector2(0,0);
         StopScreenMoving = false;
         Currency = 100;
-        Soils = new int?[100, 7];
-
-        Soils[0,0] = 1;
-        Soils[0,1] = 1;
-        Soils[0,2] = 11;
-        Soils[0,3] = 1;
-        Soils[0,4] = 1;
-        Soils[0,5] = 1;
-        Soils[0,6] = 1;
-
+        Soils = new int?[100, 8];
         CropsAvailable = new int?[11];
         CropsAvailable[0] = 11;
 
@@ -88,9 +79,9 @@ public class CurrentProgressSerialized
         pos[0] = c.position.x;
         pos[1] = c.position.y;
         Currency = c.Currency;
-        Soils = new int?[100, 7];
+        Soils = new int?[100, 8];
         for(int i=0;c.Soils[i,0].HasValue;i++){
-            for(int j=0;j<7;j++){
+            for(int j=0;j<8;j++){
                 Soils[i,j] = c.Soils[i,j];
             }
         }

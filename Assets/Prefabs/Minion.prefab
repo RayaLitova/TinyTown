@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3498471207980880959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4907324061705829124}
-  m_Layer: 0
-  m_Name: Point1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4907324061705829124
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3498471207980880959}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -0.5, z: -21.957638}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5648053737368343590}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5648053737368343587
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,7 +15,7 @@ GameObject:
   - component: {fileID: 5648053737368343592}
   - component: {fileID: 5648053737368343593}
   - component: {fileID: 2913868977983830127}
-  - component: {fileID: 8072582777162264143}
+  - component: {fileID: 1790902101233376184}
   m_Layer: 0
   m_Name: Minion
   m_TagString: Untagged
@@ -63,8 +33,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.92, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4907324061705829124}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -173,7 +142,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5648053737368343593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -213,14 +182,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5648053737368343588}
-  currentPoint: {fileID: 0}
-  currentChild: 0
   dirX: 0
   dirY: 0
-  MvSpeed: 0
-  rb: {fileID: 0}
+  MvSpeed: 3
+  rb: {fileID: 5648053737368343592}
   moveDir: {x: 0, y: 0}
---- !u!114 &8072582777162264143
+--- !u!114 &1790902101233376184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,6 +196,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5648053737368343587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50ec2e81ef2f06a40a8e0298308d5c99, type: 3}
+  m_Script: {fileID: 11500000, guid: cc2b3c455410e5c439e7b2b7dc3def9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MinionName: Minion
+  level: 0
+  currentXP: 0
+  XPtoNextLvl: 100
+  happiness: 100
+  FavouriteFood: Bread
+  health: 100
+  isPrioDefault: 1
+  MinionStatsCloseButton: {fileID: 0}
+  Plant: 0
